@@ -1,1 +1,45 @@
-Hello World
+<!doctype HTML>
+<html>
+<head>
+      <meta charset="utf-8">
+      <title>messin' with jQuery</title>
+      <script type="text/javascript" src="jquery.min.js"></script>
+      <style type="text/css">
+            #circle{
+                  background-color: blue;
+                  border-radius: 75%;
+                  width: 150px;
+                  height: 150px;
+                  margin: 10px;
+            }
+            .square1{
+                  background-color: purple;
+                  width: 150px;
+                  height: 150px;
+                  margin: 10px;
+            }
+            .square2{
+                  background-color: orange;
+                  width: 150px;
+                  height: 150px;
+                  margin: 10px;
+            }
+      </style>
+</head>
+<!--  -->
+<body>
+      <p>oh-oh! 1</p>
+      <div id="circle"></div>
+      <!-- <div class="square1"></div> -->
+      <p>oh-oh! 2</p>
+      <div class="square2"></div>
+
+<script type="text/javascript">
+
+      $("div").click(function () {
+            $(this).fadeOut();
+      })
+
+</script>
+</body>
+</html>
